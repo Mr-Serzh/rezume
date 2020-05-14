@@ -1,88 +1,122 @@
-* {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
+/*ROOT*/
+:root {
+  --sidebar-text-color: #ffffff;
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --accent-text-color: #ff6b08;
+  --primary-bg-color: #ffffff;
+  --sidebar-bg-color: #1e2939;
 }
+/* --- end root --- */
+
 body {
   background: #f5f7fa;
   padding: 40px 20px;
-  font-family: 'Montserrat', sans-serif;
-  color: #000000;
+  font: normal 14px Montserrat, sans-serif;
+  line-height: 1.7;
+  letter-spacing: 0.42px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 45px;
+  line-height: 1.2;
+  margin: 24px 0;
+}
+h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
 }
 
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  background: white;
+  background: var(--primary-bg-color);
   display: flex;
   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
 
 .sidebar {
-  background: #1e2939;
-  width: 370px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  background: var(--sidebar-bg-color);
+  width: 375px;
+  padding: 40px 0;
 }
 
 .my-photo {
-  width: 370px;
+  width: 375px;
 }
 
 .about-me-container {
-  padding-left: 90px;
-  padding-top: 110px;
-  padding-right: 90px;
-  padding-bottom: 110px;
+  padding: 110px 90px;
 }
 
 .contacts-container {
-  margin-top: 60px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin: 60px 40px 0;
 }
 
 .contacts-title {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #fff;
+  color: var(--sidebar-text-color);
   margin-bottom: 20px;
 }
 .contacts-link {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
   color: #5a626e;
 }
 
-.contacts-link-tipe {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #fff;
-  margin-right: 10px;
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.social-links .link {
+  border-radius: 50%;
+}
+
+.social-links .link:hover,
+.social-links .link:focus {
+  background-color: var(--accent-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.social-links {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts-container {
+  text-align: center;
+}
+
+.accent-text {
+  color: var(--accent-text-color);
 }
 
 .skills-title {
-  color: #ffffff;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 24px;
+  color: var(--sidebar-text-color);
   margin-bottom: 20px;
 }
 
 .skills-container {
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 55px;
+  margin: 55px 100px 0;
 }
 
 .skills-item {
-  color: #ff6b08;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
+  color: var(--accent-text-color);
   margin-left: 15px;
 }
 
@@ -90,56 +124,20 @@ body {
   color: #dfe0e3;
 }
 
-.my-name {
-  font-size: 45px;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-left: 1px;
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-
-.my-profession {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.42px;
-}
-
 .about-me-info {
   color: #797979;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
 }
 
 .projects-containet {
   margin-top: 65px;
 }
 
-.about-me-title {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 24px;
-  margin-bottom: 10px;
-}
-
 .project-item {
   color: #000000;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.42px;
-  margin-left: 15px;
 }
 
 .project-text {
   color: #595959;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
 }
 
 .work-experience-container {
@@ -152,71 +150,26 @@ body {
 
 .compani-title {
   font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.48px;
-  margin-bottom: 15px;
+  line-height: 1.5;
 }
 
-.compani-profession {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.48px;
-  color: #ff7518;
-}
-
-.compani-period {
-  color: #a8a8a8;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.36px;
-  margin-top: 14px;
-  margin-bottom: 14px;
-}
 .trait {
   color: #000;
 }
 
 .compani-text {
   color: #595959;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
   margin-left: 15px;
-  margin-top: 15px;
 }
 
 .education-container {
   margin-top: 55px;
 }
 
-.education-institute {
-  color: #ff6b08;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.48px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-.education-faculty {
-  color: #000000;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.42px;
-}
-
-.education-period {
+.period {
   color: #a8a8a8;
   font-size: 12px;
-  font-weight: 400;
-  line-height: 24px;
+  line-height: 2;
   letter-spacing: 0.36px;
-  margin-top: 10px;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
