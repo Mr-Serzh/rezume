@@ -3,7 +3,6 @@
   --sidebar-text-color: #ffffff;
   --primary-text-color: #757575;
   --title-text-color: #212121;
-  --accent-color: #2196f3;
   --accent-text-color: #ff6b08;
   --primary-bg-color: #ffffff;
   --sidebar-bg-color: #1e2939;
@@ -103,13 +102,13 @@ h3 {
 
 .social-links .link:hover,
 .social-links .link:focus {
-  background-color: var(--accent-color);
+  background-color: var(--accent-text-color);
   border-radius: 50%;
 }
 
 .link:hover,
 .link:focus {
-  color: var(--accent-color);
+  color: var(--accent-text-color);
 }
 
 .social-links {
