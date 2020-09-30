@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Serhii Hayvoronskyi</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/ctyle.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
@@ -15,10 +14,12 @@
     <!-- main container -->
     <div class="wrapper">
       <aside class="sidebar">
-        <img class="my-photo" src="./images/fo rezume.jpg" alt="My photo" />
+        <img class="my-photo" src="./images/fo rezume_1.jpg" alt="My photo" />
 
         <!-- contacts container -->
         <div class="contacts-container">
+          <h1 class="my-name-mobile">Сергій Гайворонський</h1>
+          <h2 class="my-profession-mobile">Front-End Developer</h2>          
           <h3 class="contacts-title visually-hidden">Contacts</h3>
           <div>
             <a class="contacts-link link" href="tel:+380989020055"
@@ -32,12 +33,19 @@
           </div>
           <ul class="social-links list">
             <li class="item">
+              <a class="link" target="_blank" href="https://github.com/Mr-Serzh" aria-label="GitHub link">
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/sprite_link.svg#github"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- <li class="item">
               <a class="link" target="_blank" href="#" aria-label="Instagram link">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/sprite_link.svg#instagram"></use>
                 </svg>
               </a>
-            </li>
+            </li> -->
             <!-- <li class="item">
               <a class="link" target="_blank" href="#" aria-label="Twitter link">
                 <svg class="icon" width="20" height="20">
@@ -46,7 +54,7 @@
               </a>
             </li> -->
             <li class="item">
-              <a class="link" target="_blank" href="#" aria-label="Telegram link">
+              <a class="link" target="_blank" href="https://t.me/Serhii_Hayvoronskyi" aria-label="Telegram link">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/sprite_link.svg#telegram"></use>
                 </svg>
@@ -60,26 +68,20 @@
               </a>
             </li>
             <li class="item">
-              <a class="link" target="_blank" href="#" aria-label="Facebook link">
+              <a class="link" target="_blank" href="https://www.facebook.com/profile.php?id=100023065007869" aria-label="Facebook link">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/sprite_link.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a class="link" target="_blank" href="https://github.com/Mr-Serzh" aria-label="GitHub link">
-                <svg class="icon" width="20" height="20">
-                  <use href="./images/sprite_link.svg#github"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
+            
+            <!-- <li class="item">
               <a class="link" target="_blank" href="#" aria-label="LinkedIn link">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/sprite_link.svg#linkedin"></use>
                 </svg>
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
         <!-- end contacts container -->
@@ -87,7 +89,7 @@
         <!-- tech skills container -->
         <div class="skills-container">
           <h3 class="skills-title">Tech Skills</h3>
-          <ul>
+          <ul class="list">
             <li class="skills-item">
               <span class="skills-text">HTML5</span>
             </li>
@@ -95,7 +97,13 @@
               <span class="skills-text">CSS3</span>
             </li>
             <li class="skills-item">
+              <span class="skills-text">Sass</span>
+            </li>
+            <li class="skills-item">
               <span class="skills-text">GIT</span>
+            </li>
+            <li class="skills-item">
+              <span class="skills-text">GitHub</span>
             </li>
             <li class="skills-item">
               <span class="skills-text">WebPack</span>
@@ -116,7 +124,7 @@
         <!-- soft skills container -->
         <div class="skills-container">
           <h3 class="skills-title">Soft Skills</h3>
-          <ul>
+          <ul class="list">
             <li class="skills-item">
               <span class="skills-text">Scrum</span>
             </li>
@@ -139,25 +147,28 @@
         <!-- about me main info -->
         <div>
           <h2 class="my-profession">Front-End Developer</h2>
-          <h1 class="my-name">Serhii Hayvoronskyi</h1>
+          <h1 class="my-name">Сергій Гайворонський</h1>
           <p class="about-me-info">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-            accumsan lacus vel facilisis.
+            Коммуникабельность, стрессоустойчивость и нацеленность на результат помогают мне добиваться наиболее выгодных для
+            компании условий на переговорах.
           </p>
         </div>
         <!-- end about me main info -->
 
         <!-- projects container -->
         <div class="projects-containet">
-          <h3 class="about-me-title">Projects</h3>
+          <h3 class="about-me-title">Проекти</h3>
 
           <ul class="list">
             <li class="project-item">
-              <a class="project-text link" target="_blank" href="https://lovecamp.allinsol.com/"
-                >lovecamp.allinsol.com</a
+              <a class="project-text link" target="_blank" href="https://mr-serzh.github.io/web-studio/"
+                >WebStudio</a
               >
+              <span class="project-text">............</span>
+              <span>[ <samp class="project-text">HTML5, CSS3</samp>]</span>
+            </li>
+            <li class="project-item">
+              <a class="project-text link" target="_blank" href="https://luno-front-end.github.io/top-8-devs/">BarberShop</a>
               <span class="project-text">............</span>
               <span>[ <samp class="project-text">HTML5, CSS3</samp>]</span>
             </li>
@@ -183,7 +194,7 @@
 
         <!-- work experience container -->
         <div class="work-experience-container">
-          <h3 class="about-me-title">Work Experience</h3>
+          <h3 class="about-me-title">Досвід роботи</h3>
 
           <!-- compani 1 -->
           <div class="compani-container">
@@ -192,14 +203,14 @@
               <span class="accent-text">Freelance</span>
             </h4>
             <p class="period">
-              June 2020 - up to now <samp class="trait">|</samp> Ukraine
+              Липень 2020 - дотепер <samp class="trait">|</samp> Україна
             </p>
 
-            <ul class="compani-text">
-              <li>Drink</li>
-              <li>Eat</li>
-              <li>Sleep</li>
-              <li>Code</li>
+            <ul class="compani-text list">
+              <li>Пити</li>
+              <li>Їсти</li>
+              <li>Спати</li>
+              <li>шКодить</li>
             </ul>
           </div>
           <!-- end compani 1 -->
@@ -211,13 +222,13 @@
               <span class="accent-text">Сoffee Сompany</span>
             </h4>
             <p class="period">
-              September 2012 - up to now <samp class="trait">|</samp> Ukraine
+              Вересень 2012 - дотепер <samp class="trait">|</samp> Україна
             </p>
 
-            <ul class="compani-text">
-              <li>Drink</li>
-              <li>Eat</li>
-              <li>Sleep</li>              
+            <ul class="compani-text list">
+              <li>Пити</li>
+              <li>Їсти</li>
+              <li>Спати</li>              
           </div>
           <!-- end compani 2 -->
         </div>
@@ -225,12 +236,12 @@
 
         <!-- education container-->
         <div class="education-container">
-          <h3 class="about-me-title">Education</h3>
+          <h3 class="about-me-title">Навчання</h3>
           <h4 class="compani-title"> 
             Fullstack <samp class="accent-text">GOIT. School of training IT specialists</samp>
           </h4>
           <p class="period">
-            April 2020 - up to now <samp class="trait">|</samp> Ukraine
+            Квітень 2020 - дотепер <samp class="trait">|</samp> Україна
           </p>
         </div>
         <!-- end education -->
