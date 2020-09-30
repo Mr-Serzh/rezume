@@ -1,0 +1,79 @@
+// CONTACTS
+// .my-photo {
+//   //   width: 375px;
+// }
+
+.contacts-container {
+  margin-top: 40px;
+  //   margin: 60px 40px 0;
+}
+
+.my-profession-mobile {
+  color: $sidebar-text-color;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.my-name-mobile {
+  color: $sidebar-text-color;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.contacts-title {
+  color: $sidebar-text-color;
+  // margin-bottom: 20px;
+}
+.contacts-link {
+  color: $sidebar-text-color;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.social-links .link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  fill: $primary-text-color;
+}
+
+.social-links .link:hover,
+.social-links .link:focus {
+  background-color: $accent-text-color;
+  border-radius: 50%;
+}
+
+.link:hover,
+.link:focus {
+  color: $accent-text-color;
+}
+
+.social-links {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts-container {
+  text-align: center;
+}
+
+.accent-text {
+  color: $accent-text-color;
+}
+// end CONTACTS

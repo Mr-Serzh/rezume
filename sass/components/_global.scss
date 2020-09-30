@@ -1,0 +1,157 @@
+// body {
+//   color: $primary-text-color;
+//   background-color: $primary-white-color;
+//   font-family: Roboto, sans-serif;
+//   font-size: 14px;
+//   letter-spacing: 0.03em;
+// }
+
+// .section {
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+
+//   @media screen and (min-width: $desktop) {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+//   }
+
+//   &-title {
+//     color: $title-text-color;
+//     font-size: 28px;
+//     font-weight: 700;
+//     line-height: 1.18;
+//     text-align: center;
+//     margin-top: 0;
+//     margin-bottom: 30px;
+
+//     @media screen and (min-width: $desktop) {
+//       font-size: 36px;
+//       line-height: 1.16;
+//       margin-bottom: 50px;
+//     }
+//   }
+// }
+
+// .container {
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-left: 15px;
+//   padding-right: 15px;
+
+//   @media screen and (min-width: $mobile) {
+//     width: $mobile;
+//   }
+
+//   @media screen and (min-width: $tablet) {
+//     width: $tablet;
+//   }
+
+//   @media screen and (min-width: $desktop) {
+//     width: $desktop;
+//   }
+// }
+
+// .link {
+//   text-decoration: none;
+//   display: block;
+// }
+
+/* --- MAINE --- */
+body {
+  background: #f5f7fa;
+  padding: 20px 15px;
+  font: normal 14px Montserrat, sans-serif;
+  line-height: 1.7;
+  letter-spacing: 0.42px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 40px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+h1 {
+  @include adaptiv-font(24, 45);
+  // font-size: calc(24px + 19 * ((100vw - 320px) / (1280 - 320)));
+  line-height: 1.2;
+  margin: 24px 0;
+}
+h3 {
+  // font-size: 22px;
+  @include adaptiv-font(17, 22);
+  margin-bottom: 20px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  // max-width: 1200px;
+  margin: 0 auto;
+  // padding-left: 15px;
+  // padding-right: 15px;
+  background: $primary-bg-color;
+  // display: flex;
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    display: flex;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+
+  & .sidebar {
+    background: $sidebar-bg-color;
+    // width: 375px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+
+    // @media screen and (min-width: $mobile) {
+    //     width: $mobile;
+    //   }
+
+    @media screen and (min-width: $tablet) {
+      width: 375px;
+      padding: 40px 0;
+    }
+
+    //   @media screen and (min-width: $desktop) {
+    //     width: $desktop;
+    //   }
+  }
+}
+
+// .list {
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
+// }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* --- end MAIN --- */

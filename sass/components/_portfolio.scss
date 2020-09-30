@@ -1,0 +1,39 @@
+// PORTFOLIO
+.about-me-container {
+  // padding: 110px 90px;
+  padding: 30px 15px;
+}
+
+.my-profession {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.my-name {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.about-me-info {
+  color: #595959;
+}
+
+.projects-containet {
+  margin-top: 65px;
+  //   margin: 55px 100px 0;
+}
+
+.project-item {
+  color: #000000;
+}
+
+.project-text {
+  color: #595959;
+}
+// end PORTFOLIO
