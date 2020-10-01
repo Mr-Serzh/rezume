@@ -293,6 +293,12 @@ img {
   margin-top: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .work-experience-container {
+    margin-top: 50px;
+  }
+}
+
 .compani-container {
   margin-top: 15px;
 }
@@ -317,7 +323,7 @@ img {
   margin-left: 15px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .compani-text {
     list-style: inside;
     margin-left: 0;
@@ -326,6 +332,12 @@ img {
 
 .education-container {
   margin-top: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .education-container {
+    margin-top: 50px;
+  }
 }
 
 .about-me-container {
@@ -356,6 +368,12 @@ img {
 @media screen and (min-width: 768px) {
   .my-profession {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .my-profession {
+    margin-bottom: 35px;
   }
 }
 
@@ -401,6 +419,13 @@ img {
     text-align: start;
     margin-left: 50px;
     list-style: inside;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .my-photo {
+    border-radius: 5px;
+    overflow: hidden;
   }
 }
 

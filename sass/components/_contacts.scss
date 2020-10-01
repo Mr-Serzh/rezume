@@ -1,4 +1,11 @@
 // CONTACTS
+.my-photo {
+  @media screen and (min-width: $tablet) {
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}
+
 .contacts-container {
   margin-top: 40px;
 
