@@ -7,11 +7,20 @@
   }
 
   @media screen and (min-width: $desktop) {
-    padding: 70px 50px;
+    padding: 70px 70px;
   }
 
   .about-me-title {
     color: $title-text-color;
+  }
+
+  .about-me-info {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-right: 130px;
+    }
   }
 }
 

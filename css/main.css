@@ -352,12 +352,22 @@ img {
 
 @media screen and (min-width: 1200px) {
   .about-me-container {
-    padding: 70px 50px;
+    padding: 70px 70px;
   }
 }
 
 .about-me-container .about-me-title {
   color: #212121;
+}
+
+.about-me-container .about-me-info:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-me-container .about-me-info {
+    padding-right: 130px;
+  }
 }
 
 .my-profession {
@@ -408,6 +418,12 @@ img {
 
 .skills-container {
   margin-top: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .skills-container .skills-item {
+    color: #276fdb;
+  }
 }
 
 .skills-container .skills-text {
