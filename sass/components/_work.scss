@@ -1,35 +1,38 @@
 // WORK
 .work-experience-container {
-  margin-top: 55px;
+  margin-top: 30px;
 }
 
 .compani-container {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .compani-title {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.trait {
-  color: #000;
-}
-
-.compani-text {
-  color: #595959;
-  margin-left: 15px;
-}
-
-.education-container {
-  margin-top: 55px;
+  color: $title-text-color;
 }
 
 .period {
-  color: #a8a8a8;
+  color: $period-text-color;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.36px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+
+  .trait {
+    color: $title-text-color;
+  }
 }
+
+.compani-text {
+  margin-left: 15px;
+  @media screen and (min-width: $desktop) {
+    list-style: inside;
+    margin-left: 0;
+  }
+}
+
+.education-container {
+  margin-top: 30px;
+}
+
 // end WORK
