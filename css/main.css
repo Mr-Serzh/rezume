@@ -303,6 +303,14 @@ img {
   margin-top: 15px;
 }
 
+.compani-container .list {
+  list-style: inside;
+}
+
+.compani-container .item {
+  color: #276fdb;
+}
+
 .compani-title {
   color: #212121;
 }
@@ -320,7 +328,7 @@ img {
 }
 
 .compani-text {
-  list-style: inside;
+  color: #595959;
 }
 
 .education-container {
@@ -331,6 +339,14 @@ img {
   .education-container {
     margin-top: 50px;
   }
+}
+
+.education-container .list {
+  list-style: inside;
+}
+
+.education-container .item {
+  color: #276fdb;
 }
 
 .about-me-container {

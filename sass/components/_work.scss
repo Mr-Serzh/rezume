@@ -9,6 +9,14 @@
 
 .compani-container {
   margin-top: 15px;
+
+  & .list {
+    list-style: inside;
+  }
+
+  & .item {
+    color: $accent-text-color;
+  }
 }
 
 .compani-title {
@@ -28,7 +36,7 @@
 }
 
 .compani-text {
-  list-style: inside;
+  color: $primary-text-color;
 }
 
 .education-container {
@@ -37,6 +45,13 @@
   @media screen and (min-width: $desktop) {
     margin-top: 50px;
   }
-}
 
+  & .list {
+    list-style: inside;
+  }
+
+  & .item {
+    color: $accent-text-color;
+  }
+}
 // end WORK
