@@ -28,11 +28,7 @@
 }
 
 .compani-text {
-  margin-left: 15px;
-  @media screen and (min-width: $tablet) {
-    list-style: inside;
-    margin-left: 0;
-  }
+  list-style: inside;
 }
 
 .education-container {
