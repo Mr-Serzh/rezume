@@ -7,7 +7,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    padding: 70px 70px;
+    padding: 70px 200px 70px 70px;
   }
 
   .about-me-title {
@@ -17,9 +17,6 @@
   .about-me-info {
     &:not(:last-child) {
       margin-bottom: 10px;
-    }
-    @media screen and (min-width: $desktop) {
-      padding-right: 130px;
     }
   }
 }
@@ -48,18 +45,33 @@
   }
 }
 
+// /*PROJEST*/
 .projects-containet {
   margin-top: 30px;
   @media screen and (min-width: $desktop) {
     margin-top: 50px;
+    // margin-right: 100px;
   }
 
   .project-item {
     color: $title-text-color;
+    display: flex;
+    justify-content: space-between;
   }
 
   .project-text {
     color: $primary-text-color;
+    white-space: nowrap;
+
+    &.link {
+      margin-right: 6px;
+    }
+  }
+
+  .dots {
+    width: 100%;
+    border-bottom: 1px dotted $primary-text-color;
+    margin: 0 6px 6px 0;
   }
 }
-// end PORTFOLIO
+// /* end PROJEST*/
