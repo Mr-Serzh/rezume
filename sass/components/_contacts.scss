@@ -9,6 +9,10 @@
 .contacts-container {
   margin-top: 40px;
 
+  @media screen and (min-width: $tablet) {
+    padding: 0 20px;
+  }
+
   .my-profession-mobile {
     @media screen and (min-width: $tablet) {
       display: none;
