@@ -222,7 +222,7 @@ img {
 @media screen and (min-width: 768px) {
   .wrapper .sidebar {
     width: 375px;
-    padding: 30px 20px;
+    padding: 30px 0;
   }
 }
 
@@ -320,14 +320,7 @@ img {
 }
 
 .compani-text {
-  margin-left: 15px;
-}
-
-@media screen and (min-width: 768px) {
-  .compani-text {
-    list-style: inside;
-    margin-left: 0;
-  }
+  list-style: inside;
 }
 
 .education-container {
@@ -352,7 +345,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .about-me-container {
-    padding: 70px 70px;
+    padding: 70px 200px 70px 70px;
   }
 }
 
@@ -362,12 +355,6 @@ img {
 
 .about-me-container .about-me-info:not(:last-child) {
   margin-bottom: 10px;
-}
-
-@media screen and (min-width: 1200px) {
-  .about-me-container .about-me-info {
-    padding-right: 130px;
-  }
 }
 
 .my-profession {
@@ -410,10 +397,27 @@ img {
 
 .projects-containet .project-item {
   color: #212121;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .projects-containet .project-text {
   color: #595959;
+  white-space: nowrap;
+}
+
+.projects-containet .project-text.link {
+  margin-right: 6px;
+}
+
+.projects-containet .dots {
+  width: 100%;
+  border-bottom: 1px dotted #595959;
+  margin: 0 6px 6px 0;
 }
 
 .skills-container {
@@ -433,7 +437,7 @@ img {
 @media screen and (min-width: 1200px) {
   .skills-container .skills-list {
     text-align: start;
-    margin-left: 50px;
+    margin-left: 40px;
     list-style: inside;
   }
 }
@@ -447,6 +451,12 @@ img {
 
 .contacts-container {
   margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-container {
+    padding: 0 20px;
+  }
 }
 
 @media screen and (min-width: 768px) {
