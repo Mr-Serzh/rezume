@@ -52,6 +52,8 @@ img {
 .wrapper {
   margin: 0 auto;
   background: $primary-bg-color;
+  border-radius: 10px;
+  overflow: hidden;
   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 
   @media screen and (min-width: $mobile) {
@@ -65,6 +67,7 @@ img {
 
   @media screen and (min-width: $desktop) {
     width: $desktop;
+    border-radius: 0;
   }
 
   & .sidebar {

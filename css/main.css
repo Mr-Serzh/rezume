@@ -186,6 +186,8 @@ img {
 .wrapper {
   margin: 0 auto;
   background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
   -webkit-box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
           box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
@@ -208,6 +210,7 @@ img {
 @media screen and (min-width: 1200px) {
   .wrapper {
     width: 1200px;
+    border-radius: 0;
   }
 }
 
